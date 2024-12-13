@@ -1,0 +1,35 @@
+/* main */
+.latest-grid {
+    display: grid;
+    grid-template-columns: 30% 60%;
+    width: 70%;
+    gap: 10%;
+    padding: 100px;
+    line-height: 1.5;
+}
+
+.column1 {
+}
+
+.column2 h1 {
+    font-size: 24px;
+}
+
+.column2 .news-element {
+    margin-bottom: 40px;
+}
+
+.latest-grid .latest-image {
+    width: 100%;
+}
+
+.cell .people-info {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: white;
+    padding: 10px;
+    width: 50%;
+    line-height: 1;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}

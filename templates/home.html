@@ -3,28 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>South Port Sailing School-Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS-JS/home-style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS-JS/base.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,464;1,6..96,464&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,100;1,6..96,100&family=Montserrat:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Welcome to ...</h1>
-        <h1 class="Header Name">South Port Sailing School</h1>
-        <div class = "grid">
-            <a><img src="static/social_media/icon/instagram.png" alt="Instagram"></a>
-            <a><img src="static/social_media/icon/facebook.png" alt="Facebook"></a>
-            <a><img src="static/social_media/icon/tiktok.png" alt="TikTok"></a>
+        <h1 class="welcome">W E L C O M E &ensp; T O  . . .</h1>
+        <h1 class="name">South Port Sailing School</h1>
+        <div class="icons">
+            <a href="#"><img src="static/social_media/icon/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="static/social_media/icon/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="static/social_media/icon/tiktok.png" alt="TikTok"></a>
         </div>
-        <nav>
-            <a href="">Home</a>
-            <a href="/keep-up-to-date">Latest News</a>
-            <a href="/programs">Programs</a>
-            <a href="/registration">Registration</a>
-            <a href="/meet-the-team">Meet The Team</a>
-        </nav>
+        <table>
+            <tr>
+                <td class="edge"><a href="" class="current">Home</a></td>
+                <td><a href="/keep-up-to-date">Latest News</a></td>
+                <td><a href="/programs">Programs</a></td>
+                <td><a href="/registration">Registration</a></td>
+                <td class="edge"><a href="/meet-the-team">Meet The Team</a></td>
+            </tr>
+        </table>
     </header>
-    <main>
-        <p>This is the Home page.</p>
+    <main class="grey-bg-color">
+        <section class="sailing-for-everyone">
+            <div class="home-image image-container"><img src="static/footer/placeholder.png" alt="Image 1"></div>
+            <div class="home-text text-container white-bg-color">
+                <h1>Sailing for everyone!</h1>
+                <p>Welcome to our sailing school, located on the beautiful Lake St. Clair in
+                    Tecumseh Ontario! We are excited to offer a variety of programs for
+                    both adults and children who are interested in learning how to sail. Our
+                    experienced instructors provide safe and engaging instruction, teaching
+                    students the skills and knowledge they need to become confident
+                    sailors. Our programs include adult sail and kid sail, as well as CANSail
+                    training for ages 9-18. Whether you're a beginner or looking to advance
+                    your skills, we have something for everyone. Come join us and
+                    experience the thrill of sailing on Lake St. Clair!</p>
+                <p class="open-registration">Registration is now open! Please view the <a href="/registration">registration page</a> for more
+                    information.</p>
+                <a class="package" href="#">Safe Sport Policies Package > </a>
+            </div>
+        </section>
+        <section class="regattas-section">
+            <div class="home-text2 text-container white-bg-color">
+                <h1>Regattas and Events!!</h1>
+                <p>We are proud to anounce that South Port Sailing Club is once again
+                    hosting the 2024 Ontario Sailing Regional Championships of Western
+                    Ontario (OSRCWO), on August 17th and 18th! If interested in
+                    participating, please visit our <a href="#">NOR</a> page and sign up! Classes of boats
+                    inviated include 420 s, Lasers (ILCA 7 s), and Optimists.
+                    <br><br>
+                    Additionally, we are having our annual Tuesday night Dinghy racing
+                    series this summer! Please visit our NOR Page (linked above) to sign up!
+                    Classes of boats invited include 420s, ILCA7 s (Full Rig Lasers), and
+                    Wayfarers.
+                </p>
+            </div>
+            <div class="home-image2 image-container"><img src="static/home/sailing-boats.png" alt="Image 2"></div>
+        </section>
     </main>
+    <hr>
+    <footer>
+        <div class="image-quote">
+            <div class="quote-container">
+                <div class="quote-text">
+                    "You can't control the <br>
+                    wind, but you can <br>
+                    adjust your sails"
+                </div>
+            </div>
+            <div class="image-gallery">
+                <span class="arrow prev" onclick="changeCard('footer', 'prev')"> < </span>
+                <span class="arrow next" onclick="changeCard('footer', 'next')"> > </span>
+                <div class="footer-image image-container"><img src="static/footer/placeholder.png" alt="Image 1"></div>
+                <div class="footer-image image-container"><img src="static/footer/placeholder2.png" alt="Image 2"></div>
+                <div class="footer-image image-container"><img src="static/footer/placeholder3.png" alt="Image 3"></div>
+                <div class="image-caption"></div>
+            </div>
+        </div>
+        <div class="footer-acknowledge">
+            We wholly acknowledge that the South Port Sailing School is situated on the traditional territory of the<br>
+            Attiwonderonk, Myaamia, Wyandot, Anishinabewaki, and Mississauga peoples. Our active work towards<br>
+            reconciliation involves our various inclusivity goals in the attendance of our sailing lessons; anyone can<br>
+            join and explore the beautiful world of sailing.
+        </div>
+        <div class="footer-location">
+            We are located at 210 Brighton Road,<br>
+            Tecumseh, ON, N8N 2L3. Come visit us!
+        </div>
+    </footer>
+    <script src="{{ url_for('static', filename='CSS-JS/base.js') }}" onload="displayCard('footer', 0)"></script>
 </body>
 </html>

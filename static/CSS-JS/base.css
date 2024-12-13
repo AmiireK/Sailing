@@ -1,0 +1,260 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    font-family: 'Montserrat';
+    font-weight: 100;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+header .welcome {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: 'Montserrat';
+    font-weight: 100;
+    font-size: 20px;
+}
+
+header .name {
+    font-family: "Bodoni Moda", serif;
+    font-size: 72px;
+}
+
+header .icons {
+    margin-bottom: 150px;
+}
+
+header img {
+    height: 30px;
+    margin: 0 10px;
+}
+
+header a {
+    color: black;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+header a:hover, .current {
+    color: #770d77;
+}
+
+header table {
+    margin: 10px auto;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+header td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 40px 10px;
+}
+
+header table .edge {
+    border-left: none;
+    border-right: none;
+}
+
+/* main */
+main {
+    font-weight: 200;
+    line-height: 1.5;
+}
+
+/* footer */
+footer {
+    font-weight: 100;
+}
+
+footer .image-quote {
+    margin: 0;
+    padding: 0;
+    background-color: #0080b4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    font-family: 'Arial', sans-serif;
+}
+
+footer .quote-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    max-width: 600px;
+}
+
+footer .quote-container::before {
+    content: "''";
+    font-size: 400px;
+    color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+footer .quote-text {
+    position: relative;
+    z-index: 2;
+    font-size: 24px;
+    font-style: italic;
+    font-family: 'Montserrat';
+    line-height: 1.5;
+}
+
+footer .image-gallery {
+    margin-left: 200px;
+    width: 600px;
+    height: 370px;
+}
+
+footer .footer-image {
+    width: 100%;
+    height: 100%;
+}
+
+footer .footer-image img {
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+footer .image-gallery .image-caption {
+    background-color: rgba(256, 256, 256, 0.8);
+    opacity: 0;
+}
+
+footer .image-gallery:hover .image-caption {
+    opacity: 1;
+}
+
+footer .footer-acknowledge {
+    margin: 50px 0;
+    background-color: white;
+    padding-left: 25%;
+    color: black;
+    font-size: 15px;
+    font-style: italic;
+    font-family: 'Montserrat';
+}
+
+footer .footer-location {
+    padding: 10px 0;
+    background-color: lightgrey;
+    text-align: center;
+    color: black;
+    font-size: 24px;
+    font-family: 'Montserrat';
+}
+
+/* Shared */
+main, header {
+    background-color: rgba(247, 247, 252, 0.6);
+    padding: 30px 0;
+}
+
+.grey-bg-color {
+    background-color: #eaeaea;
+}
+
+.white-bg-color {
+    background-color: white;
+}
+
+.transparent-bg-color {
+    background-color: transparent;
+}
+
+.image-gallery {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+}
+
+.image-gallery:hover .arrow {
+    opacity: 0.5;
+}
+
+.image-gallery:hover .arrow:hover {
+    opacity: 1;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.image-gallery .image-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+main .text-container {
+    position: relative;
+    color: black;
+    z-index: 2;
+}
+
+h1, h2 {
+    font-size: 50px;
+    font-family: "Bodoni Moda", serif;
+}
+
+p, ul, a {
+    font-size: 15px;
+    font-family: "Montserrat";
+    font-weight: 300;
+}
+
+.arrow {
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 2;
+    line-height: 1.5;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.arrow.prev {
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.arrow.next {
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+hr {
+    margin: 50px;
+}

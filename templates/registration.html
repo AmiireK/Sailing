@@ -3,28 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>South Port Sailing School-Meet The Team</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS-JS/registration-style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS-JS/base.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,464;1,6..96,464&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,100;1,6..96,100&family=Montserrat:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1 class>Welcome to ...</h1>
-        <h1 class="header name">South Port Sailing School</h1>
-        <div class = "grid">
-            <a><img src="static/social_media/icon/instagram.png" alt="Instagram"></a>
-            <a><img src="static/social_media/icon/facebook.png" alt="Facebook"></a>
-            <a><img src="static/social_media/icon/tiktok.png" alt="TikTok"></a>
+        <h1 class="welcome">W E L C O M E &ensp; T O  . . .</h1>
+        <h1 class="name">South Port Sailing School</h1>
+        <div class="icons">
+            <a href="#"><img src="static/social_media/icon/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="static/social_media/icon/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="static/social_media/icon/tiktok.png" alt="TikTok"></a>
         </div>
-        <nav>
-            <a href="/">Home</a>
-            <a href="/keep-up-to-date">Latest News</a>
-            <a href="/programs">Programs</a>
-            <a href="/registration">Registration</a>
-            <a href="/meet-the-team">Meet The Team</a>
-        </nav>
+        <table>
+            <tr>
+                <td class="edge"><a href="/">Home</a></td>
+                <td><a href="/keep-up-to-date">Latest News</a></td>
+                <td><a href="/programs">Programs</a></td>
+                <td><a href="/registration" class="current">Registration</a></td>
+                <td class="edge"><a href="/meet-the-team">Meet The Team</a></td>
+            </tr>
+        </table>
     </header>
-    <main>
-        <p>This is the Registration page.</p>
+    <main class="grey">
+        <section class="join-section">
+            <div class="registration-join-image image-container"><img src="static/registration/image-join.png" alt="Image 3"></div>
+            <div class="text-container white-bg-color">
+                <h1>Ready to join the fun?</h1>
+                <p>
+                    Registering for our sailing programs is quick and easy! Simply visit
+                    the website below and select the program you're interested in from our
+                    list of offerings. From there, you'll be prompted to fill out a
+                    registration form with your personal and contact information, as well as
+                    any additional details related to the program. If you have any questions
+                    or concerns about the registration process, our team is always available
+                    to assist you. Don't miss out on the opportunity to experience the joy
+                    of sailing - register for our programs today!
+                </p>
+            </div>
+        </section>
+        <section class="general-section text-container">
+            <h1>General Program Information</h1>
+            <h2>Sailing School Location</h2>
+            <ul>
+                <li>All courses/sessions are conducted at the South Port
+                    Sailing Club, 210 Brighton Road, Tecumseh Ontario
+                </li>
+            </ul>
+
+            <h2>Instructors</h2>
+            <ul>
+                <li>All instructors at South Port Sailing School are trained
+                    and certified by both Sail Canada and Ontario Sailing
+                    Associations.
+                </li>
+                <li>South Port is proud to be the home club to several
+                    members of the Ontario Sailing Team, and encourages our
+                    sailors and instructors to compete at the highest levels.
+                </li>
+                <li>During a course, certified instructors may be accompanied
+                    by Instructor in Training, or "IITs". These are qualified
+                    sailors from around Windsor-Essex working toward their
+                    teaching certifications and contribute their time, effort
+                    and experience to assist the sailors and the instructors
+                    when possible.
+                </li>
+            </ul>
+
+            <h2>Safety Requirements</h2>
+            <ul>
+                <li>Each sailor must have his or her own approved vest type
+                    lifejacket. This will be worn at all times when on the water.
+                    Note that lifejackets must be approved by either Transport
+                    Canada, Canadian Coast Guard, or Fisheries and Oceans Canada.
+                </li>
+                <li>Sailing is an active pastime. Each sailor must be able to swim
+                    a minimum of 50 feet within a reasonable time.
+                </li>
+                <li>Each sailor must be able to swim underwater.
+                    <br>(Note that sailors may be tested to ensure they meet above
+                    swimming requirements.)
+                </li>
+                <li>Each sailor is requested to dress for the weather, considering
+                    both temperatures (hypothermia) and sun (UV) for any given day.
+                    Sailors should also bring sunscreen as necessary for their own
+                    use.
+                </li>
+                <li>Sailors must bring proper footwear that can be worn on a boat
+                    and in the water.
+                </li>
+            </ul>
+
+            <h2>Course Dates</h2>
+            <p>The duration of our courses are from the beginning of July to the end
+                of August of this year (2024). Please visit our registration website
+                listed below for more information.</p>
+        </section>
+
+        <section class="register-here-section white-bg-color">
+            <h1>Register here:</h1>
+            <p>Registration for all programs can be made using our online registration
+                system, <a href="https://southportsailingclub.checklick.com">https://southportsailingclub.checklick.com</a>. If a session has
+                no spaces available, you can register on the waitlist. Any openings
+                will be filled by those on the waitlist. Payment is due in full at the
+                time of registration. All payments are made during registration with a
+                credit card. A $50 administration fee will be deducted from the refund
+                for any cancellations prior to the start of a session. No refunds will
+                be issued once a session has started unless that space can be filled
+                from the waitlist.
+            </p>
+        </section>
+        <section class="additional-section">
+            <div class="additional-image image-container"><img src="static/footer/placeholder.png" alt="Image 1"></div>
+            <div class="additional-text text-container white-bg-color">
+                <h1>Additional Information</h1>
+                <div class="additional-part">
+                    <h2>Other Requirements:</h2>
+                    <p>
+                        Each sailor must bring their own refillable water bottle, with their name
+                        indelibly marked. Disposable water bottles will not be allowed. A means
+                        of clipping the bottle to a boat is preferred if sailing in a dinghy.
+                        <br><br>
+                        Lunches should also be "garbage-free", and packed in reusable containers
+                        with their name indelibly marked.<br>
+                        (refer to <a href="www.sailorsforthesea.org">www.sailorsforthesea.org</a>)
+                        <br><br>
+                        Valuables should not be brought to class (ie: phones, cameras, watches,
+                        jewellery). These items can be too easily dropped overboard or damaged
+                        by the water. Also, SPSS cannot be held responsible for valuables left
+                        unattended in the buildings or on the dock during a class.
+                        <br><br>
+                        Sailing lessons are a chance to enjoy the outdoors and spend time learning
+                        new skills and meeting new friends. The staff request that students refrain
+                        from using any electronic device during class time. Please leave devices at
+                        home or in your bags while at South Port.
+                    </p>
+                </div>
+                <div class="additional-part">
+                    <h2>CANSail Levels:</h2>
+                    <p>
+                        CANSail Levels were introduced in 2012. Full details are available at the
+                        Sail Canada website. Levels are accomplished when a skill level is achieved.
+                        Everyone learns at their own pace, and weather can play a big role. Our
+                        instructors stress fun over achievement for young children. If level
+                        achievement is important, tell your instructor and they will give you
+                        progress reports.
+                    </p>
+                </div>
+                <div class="additional-part">
+                    <h2>Advancing Sailors: Questions and Concerns</h2>
+                    <p>
+                        SPSC Sailing School has set a high standard of achievement for its
+                        sailors to insure they move through the levels with confidence and the
+                        required base skills. Many of the instructors frequently required repeated
+                        levels to meet the program requirements.
+                        <br><br>
+                        In the past, instructors have felt parental pressure to advance sailors who
+                        had not achieved the required competence to advance. Obviously this would
+                        create serious concerns if, while in advanced levels, the sailor was unable
+                        to demonstrate the required skills — especially when some were necessary to
+                        sail independently on the Great Lakes.
+                        <br><br>
+                        Please accept and appreciate that not all sailors will achieve the required
+                        skills on the first attempt. It is our goal to insure sailors can demonstrate
+                        consistently the required skills of the level being undertaken — a sailor
+                        that does not consistently demonstrate the required skills does not fail —
+                        the sailor has simply not completed the level. Please contact your child's
+                        instructor if you have concerns about your child's advancement. In most cases
+                        extra help can be arranged if you wish.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="questions-section white-bg-color">
+            <h1>Questions? Feel free to reach out!</h1>
+            <p>Visit our chat box to place your questions or feel free to email the
+                following representative:
+            </p>
+            <a href="mailto:">spsschair@gmail.com</a>
+        </section>
     </main>
+    <hr>
+    <footer>
+        <div class="image-quote">
+            <div class="quote-container">
+                <div class="quote-text">
+                    "You can't control the <br>
+                    wind, but you can <br>
+                    adjust your sails"
+                </div>
+            </div>
+            <div class="image-gallery">
+                <span class="arrow prev" onclick="changeCard('footer', 'prev')"> < </span>
+                <span class="arrow next" onclick="changeCard('footer', 'next')"> > </span>
+                <div class="footer-image image-container"><img src="static/footer/placeholder.png" alt="Image 1"></div>
+                <div class="footer-image image-container"><img src="static/footer/placeholder2.png" alt="Image 2"></div>
+                <div class="footer-image image-container"><img src="static/footer/placeholder3.png" alt="Image 3"></div>
+                <div class="image-caption"></div>
+            </div>
+        </div>
+        <div class="footer-acknowledge">
+            We wholly acknowledge that the South Port Sailing School is situated on the traditional territory of the<br>
+            Attiwonderonk, Myaamia, Wyandot, Anishinabewaki, and Mississauga peoples. Our active work towards<br>
+            reconciliation involves our various inclusivity goals in the attendance of our sailing lessons; anyone can<br>
+            join and explore the beautiful world of sailing.
+        </div>
+        <div class="footer-location">
+            We are located at 210 Brighton Road,<br>
+            Tecumseh, ON, N8N 2L3. Come visit us!
+        </div>
+    </footer>
+    <script src="{{ url_for('static', filename='CSS-JS/base.js') }}" onload="displayCard('footer', 0)"></script>
 </body>
 </html>

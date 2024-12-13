@@ -1,0 +1,63 @@
+/* main */
+main .sailing-for-everyone, main .regattas-section {
+    position: relative;
+    display: flex;
+    padding: 150px 50px;
+}
+
+main .regattas-section {
+    align-items: center;
+}
+
+main .home-image {
+    position: relative;
+    width: 800px;
+    overflow: hidden;
+}
+
+main .home-image2 {
+    position: relative;
+    width: 700px;
+    overflow: hidden;
+    left: 50px;
+}
+
+.home-text {
+    top: 100px;
+    right: 100px;
+    padding: 100px;
+    width: 500px;
+}
+
+.home-text2 {
+    top: 0;
+    left: 0;
+    padding: 20px 50px;
+    width: 450px;
+}
+
+main .home-text .open-registration {
+    font-weight: bolder;
+    font-style: italic;
+    margin: 20px auto 40px auto;
+}
+
+main .home-text .open-registration a, main .home-text2 a {
+    color: black;
+}
+
+main .home-text .package {
+    margin: 30px auto;
+    padding: 10px 50px;
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: "Montserrat";
+    text-decoration: none;
+    color: mediumpurple;
+    border: mediumpurple solid 1px;
+}
+
+main .home-text .package:hover {
+    background-color: mediumpurple;
+    color: white;
+}
